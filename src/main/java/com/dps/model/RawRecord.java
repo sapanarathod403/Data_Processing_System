@@ -1,23 +1,25 @@
 package com.dps.model;
 
-import lombok.Builder;
-import lombok.Data;
+import com.dps.constant.OrderStatus;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class RawRecord {
     private Long orderId;
 
     private String customerName;
 
-    private BigDecimal amount;
+    private String amount;
 
     private String currency;
 
-    private LocalDate orderDate;
+    private String orderDate;
 
     private String source;
 }

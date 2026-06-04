@@ -1,0 +1,2 @@
+order_id,customer_name,amount,currency,order_date
+1001,John Smith,250.00,USD,2024-01-15
